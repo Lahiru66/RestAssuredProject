@@ -66,7 +66,6 @@ public class PostsTest extends TestBase {
         return testDataList.stream().map(data -> new Object[]{data}).toArray(Object[][]::new);
     }
 
-
     @Test(enabled = true, priority = 1, description = "create posts", groups ={"smoke"})
     public void postRequest() {
         listenerLogger.info("Starting postRequest...");
